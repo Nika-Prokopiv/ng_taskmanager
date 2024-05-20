@@ -1,0 +1,33 @@
+.main-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #C5D6D8;
+  color: #280003;
+  display: flex;
+  flex-flow: row nowrap;
+  flex-basis: auto;
+  align-items: stretch;
+}
+
+.sidebar-container {
+  flex-grow: 1;
+  padding: 5%;
+  background-color: #f85a3e;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 19;
+  align-items: stretch;
+
+  .home-header {
+    padding: 0 5%;
+    background-color: #fff;
+  }
+
+  .home-content {
+    padding: 5%;
+  }
+}
