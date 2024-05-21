@@ -1,3 +1,5 @@
+$content-padding: 2%;
+
 .main-container {
   height: 100%;
   width: 100%;
@@ -12,7 +14,7 @@
 
 .sidebar-container {
   flex-grow: 1;
-  padding: 5%;
+  padding: $content-padding;
   background-color: #f85a3e;
 }
 
@@ -23,11 +25,11 @@
   align-items: stretch;
 
   .home-header {
-    padding: 0 5%;
+    padding: 0 $content-padding;
     background-color: #fff;
   }
 
   .home-content {
-    padding: 5%;
+    padding: $content-padding;
   }
 }
