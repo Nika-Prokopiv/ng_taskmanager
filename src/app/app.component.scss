@@ -18,18 +18,18 @@ $content-padding: 2%;
   background-color: #f85a3e;
 }
 
-.home-container {
+.router-outlet-container {
   display: flex;
   flex-direction: column;
   flex-grow: 19;
   align-items: stretch;
 
-  .home-header {
+  .container-header {
     padding: 0 $content-padding;
     background-color: #fff;
   }
 
-  .home-content {
+  .container-content {
     padding: $content-padding;
   }
 }
