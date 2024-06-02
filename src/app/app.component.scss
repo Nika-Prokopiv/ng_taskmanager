@@ -1,11 +1,13 @@
+@import "variables";
+
 $content-padding: 2%;
 
 .main-container {
   height: 100%;
   width: 100%;
   position: absolute;
-  background-color: #C5D6D8;
-  color: #280003;
+  background-color: $background-gray-color;
+  color: $bean-color;
   display: flex;
   flex-flow: row nowrap;
   flex-basis: auto;
@@ -15,7 +17,7 @@ $content-padding: 2%;
 .sidebar-container {
   flex-grow: 1;
   padding: $content-padding;
-  background-color: #f85a3e;
+  background-color: $tomato-color;
 }
 
 .router-outlet-container {
@@ -26,7 +28,7 @@ $content-padding: 2%;
 
   .container-header {
     padding: 0 $content-padding;
-    background-color: #fff;
+    background-color: $background-white-color;
   }
 
   .container-content {

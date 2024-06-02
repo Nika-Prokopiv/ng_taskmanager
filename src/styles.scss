@@ -1,4 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+@import "variables";
+
 @font-face {
   font-family: 'Poppins';
   src: url('assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
@@ -35,7 +36,7 @@
 }
 
 body {
-  color: #280003;
+  color: $bean-color;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
