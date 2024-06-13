@@ -1,6 +1,6 @@
 import {Routes} from '@angular/router';
-import {HomeComponent} from "./home/home.component";
-import {PageNotFoundComponent} from "./pagenotfound/page-not-found.component";
+import {HomeComponent} from "./components/home/home.component";
+import {PageNotFoundComponent} from "./components/pagenotfound/page-not-found.component";
 
 export const routes: Routes = [
   {
