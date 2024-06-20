@@ -1,6 +1,8 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { SidebarComponent } from './sidebar.component';
+import {NgOptimizedImage} from "@angular/common";
+import {SidebarComponent} from './sidebar.component';
+import {provideRouter} from "@angular/router";
 
 describe('SidebarComponent', () => {
   let component: SidebarComponent;
@@ -8,10 +10,11 @@ describe('SidebarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SidebarComponent]
+      imports: [SidebarComponent, NgOptimizedImage],
+      providers: [provideRouter([])]
     })
-    .compileComponents();
-    
+      .compileComponents();
+
     fixture = TestBed.createComponent(SidebarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
