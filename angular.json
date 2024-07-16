@@ -110,7 +110,9 @@
                 "src/"
               ]
             },
-            "scripts": []
+            "scripts": [],
+            "karmaConfig": "karma.conf.js",
+            "codeCoverage": true
           }
         }
       }
