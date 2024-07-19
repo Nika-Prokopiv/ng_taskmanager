@@ -1,8 +1,38 @@
+@import 'variables';
+
 .logo-container {
   text-align: center;
   width: 100%;
-  
+
   h2 {
     margin-top: 0;
+  }
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+
+  .menu-item {
+    display: inline-flex;
+    flex-direction: row;
+    padding: 5px 10px;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-size: x-large;
+
+    img {
+      margin-right: 15px;
+    }
+
+    &:hover {
+      font-weight: 600;
+    }
+
+    &.active {
+      border-left: 36px $accent-color-green solid;
+      background-color: $background-gray-color;
+      font-weight: 600;
+    }
   }
 }

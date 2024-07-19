@@ -1,5 +1,5 @@
 <div class="logo-container">
-  <img [title]="'TomatoTimer | Home'"
+  <img title="TomatoTimer | Home"
        alt="tomato_timer_logo"
        height="150"
        ngSrc="assets/tomato_timer_logo.png"
@@ -8,4 +8,18 @@
        width="150">
   <h2>TomatoTimer</h2>
 </div>
-<div>Sidebar content</div>
+<div class="menu-container">
+  @for (navItem of sidebarMenu; track $index) {
+  <div [routerLink]="navItem.navigateTo"
+  class="menu-item"
+  routerLinkActive="active"
+  [routerLinkActiveOptions]='{exact: true}'
+  title={{navItem.title}}
+  >
+  <img ngSrc={{navItem.iconSrc}}
+        alt={{navItem.title}}
+        height='36' width='36'/>
+  <p>{{navItem.title}}</p>
+  </div>
+  }
+</div>
